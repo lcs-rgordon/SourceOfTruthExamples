@@ -9,16 +9,25 @@ import SwiftUI
 
 struct NumberDetailView: View {
     
-    let someNumber: FavouriteNumber
+    @Binding var someNumber: FavouriteNumber
     
     var body: some View {
         VStack {
+            
+            Spacer()
+            
             Text("\(someNumber.value)")
                 .font(.largeTitle)
+            
+            Spacer()
+            
+            Button("Add 10") {
+                someNumber.value += 10
+            }
         }
     }
 }
 
 #Preview {
-    NumberDetailView(someNumber: FavouriteNumber.example)
+    NumberDetailView(someNumber: Binding.constant(FavouriteNumber.example))
 }

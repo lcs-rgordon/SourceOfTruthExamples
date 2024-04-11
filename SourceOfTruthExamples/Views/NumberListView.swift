@@ -25,10 +25,10 @@ struct NumberListView: View {
                         description: Text("Create some new numbers to get started")
                     )
                 } else {
-                    List(numbers) { number in
+                    List($numbers) { $number in
                         NavigationLink(
                             "\(number.value)",
-                            destination: NumberDetailView(someNumber: number)
+                            destination: NumberDetailView(someNumber: $number)
                         )
                     }
                 }
