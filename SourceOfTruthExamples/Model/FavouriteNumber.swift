@@ -11,3 +11,9 @@ struct FavouriteNumber: Identifiable {
     let id = UUID()
     var value: Int
 }
+
+extension FavouriteNumber {
+    
+    static let example = FavouriteNumber(value: 17)
+    
+}

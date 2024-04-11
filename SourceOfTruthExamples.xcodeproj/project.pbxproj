@@ -12,6 +12,7 @@
 		8159598E2BC8521B00071933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8159598D2BC8521B00071933 /* Assets.xcassets */; };
 		815959912BC8521B00071933 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 815959902BC8521B00071933 /* Preview Assets.xcassets */; };
 		8159599C2BC8548500071933 /* FavouriteNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159599B2BC8548500071933 /* FavouriteNumber.swift */; };
+		8159599E2BC8561F00071933 /* NumberDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159599D2BC8561F00071933 /* NumberDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		8159598D2BC8521B00071933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		815959902BC8521B00071933 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8159599B2BC8548500071933 /* FavouriteNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteNumber.swift; sourceTree = "<group>"; };
+		8159599D2BC8561F00071933 /* NumberDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				8159598B2BC8521A00071933 /* NumberListView.swift */,
+				8159599D2BC8561F00071933 /* NumberDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8159599E2BC8561F00071933 /* NumberDetailView.swift in Sources */,
 				8159598C2BC8521A00071933 /* NumberListView.swift in Sources */,
 				8159599C2BC8548500071933 /* FavouriteNumber.swift in Sources */,
 				8159598A2BC8521A00071933 /* SourceOfTruthExamplesApp.swift in Sources */,

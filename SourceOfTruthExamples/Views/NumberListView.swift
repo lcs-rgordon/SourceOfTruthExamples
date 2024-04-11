@@ -26,7 +26,10 @@ struct NumberListView: View {
                     )
                 } else {
                     List(numbers) { number in
-                        Text("\(number.value)")
+                        NavigationLink(
+                            "\(number.value)",
+                            destination: NumberDetailView(someNumber: number)
+                        )
                     }
                 }
                 
