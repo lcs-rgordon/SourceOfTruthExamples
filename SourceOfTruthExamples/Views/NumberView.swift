@@ -10,7 +10,7 @@ import SwiftUI
 struct NumberView: View {
     
     // MARK: Stored properties
-    @State var numbers: [Int] = []
+    @State var numbers: [FavouriteNumber] = []
     @State var currentNumber: Int?
     
     // MARK: Computed properties
@@ -38,7 +38,8 @@ struct NumberView: View {
             
             Button("New") {
                 currentNumber = Int.random(in: 1...100)
-                numbers.append(currentNumber!)
+                let newNumber = FavouriteNumber(value: currentNumber!)
+                numbers.append(newNumber)
             }
             .buttonStyle(.borderedProminent)
         }

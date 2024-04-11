@@ -11,6 +11,7 @@
 		8159598C2BC8521A00071933 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159598B2BC8521A00071933 /* NumberView.swift */; };
 		8159598E2BC8521B00071933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8159598D2BC8521B00071933 /* Assets.xcassets */; };
 		815959912BC8521B00071933 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 815959902BC8521B00071933 /* Preview Assets.xcassets */; };
+		8159599C2BC8548500071933 /* FavouriteNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8159599B2BC8548500071933 /* FavouriteNumber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		8159598B2BC8521A00071933 /* NumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
 		8159598D2BC8521B00071933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		815959902BC8521B00071933 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8159599B2BC8548500071933 /* FavouriteNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteNumber.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				815959892BC8521A00071933 /* SourceOfTruthExamplesApp.swift */,
-				8159598B2BC8521A00071933 /* NumberView.swift */,
+				8159599A2BC8547500071933 /* Model */,
+				815959992BC8546B00071933 /* Views */,
 				8159598D2BC8521B00071933 /* Assets.xcassets */,
 				8159598F2BC8521B00071933 /* Preview Content */,
 			);
@@ -65,6 +68,22 @@
 				815959902BC8521B00071933 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		815959992BC8546B00071933 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8159598B2BC8521A00071933 /* NumberView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8159599A2BC8547500071933 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8159599B2BC8548500071933 /* FavouriteNumber.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8159598C2BC8521A00071933 /* NumberView.swift in Sources */,
+				8159599C2BC8548500071933 /* FavouriteNumber.swift in Sources */,
 				8159598A2BC8521A00071933 /* SourceOfTruthExamplesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
