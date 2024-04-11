@@ -11,7 +11,7 @@ import SwiftUI
 struct SourceOfTruthExamplesApp: App {
     var body: some Scene {
         WindowGroup {
-            NumberView()
+            NumberListView()
         }
     }
 }
