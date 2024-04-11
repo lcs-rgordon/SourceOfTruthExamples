@@ -5,13 +5,21 @@
 //  Created by Russell Gordon on 2024-04-11.
 //
 
+import SwiftData
 import SwiftUI
 
 struct NumberListView: View {
     
     // MARK: Stored properties
-    @State var numbers: [FavouriteNumber] = []
-    @State var currentNumber: Int?
+
+    // Access the model context (required to do additions, deletions, updates, et cetera)
+    @Environment(\.modelContext) var modelContext
+
+    // The list of favourite numbers
+    @Query var numbers: [FavouriteNumber]
+    
+    // The most recently generated number
+    @State var currentNumber: Int = 0
     
     // MARK: Computed properties
     var body: some View {
@@ -25,18 +33,18 @@ struct NumberListView: View {
                         description: Text("Create some new numbers to get started")
                     )
                 } else {
-                    List($numbers) { $number in
+                    List(numbers) { number in
                         NavigationLink(
                             "\(number.value)",
-                            destination: NumberDetailView(someNumber: $number)
+                            destination: NumberDetailView(someNumber: number)
                         )
                     }
                 }
                 
                 Button("New") {
                     currentNumber = Int.random(in: 1...100)
-                    let newNumber = FavouriteNumber(value: currentNumber!)
-                    numbers.append(newNumber)
+                    let newNumber = FavouriteNumber(value: currentNumber)
+                    modelContext.insert(newNumber)
                 }
                 .buttonStyle(.borderedProminent)
             }
@@ -47,4 +55,5 @@ struct NumberListView: View {
 
 #Preview {
     NumberListView()
+        .modelContainer(FavouriteNumber.preview)
 }

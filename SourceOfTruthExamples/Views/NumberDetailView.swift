@@ -5,11 +5,12 @@
 //  Created by Russell Gordon on 2024-04-11.
 //
 
+import SwiftData
 import SwiftUI
 
 struct NumberDetailView: View {
     
-    @Binding var someNumber: FavouriteNumber
+    @Bindable var someNumber: FavouriteNumber
     
     var body: some View {
         VStack {
@@ -29,5 +30,10 @@ struct NumberDetailView: View {
 }
 
 #Preview {
-    NumberDetailView(someNumber: Binding.constant(FavouriteNumber.example))
+    
+    let container = FavouriteNumber.preview
+    
+    return NumberDetailView(someNumber: FavouriteNumber.example)
+        .modelContainer(container)
+    
 }
